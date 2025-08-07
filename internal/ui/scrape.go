@@ -14,6 +14,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/dorkitude/vd/internal/models"
+	"github.com/dorkitude/vd/internal/scraper"
 )
 
 type ScrapeModel struct {
@@ -240,18 +241,39 @@ func (m *ScrapeModel) startScrape() tea.Cmd {
 			return scrapeCompleteMsg{err: fmt.Errorf("no project selected")}
 		}
 
-		// Check if Python script exists
-		scriptPath := "scripts/scrape_mintlify.py"
-		if _, err := os.Stat(scriptPath); os.IsNotExist(err) {
-			return scrapeCompleteMsg{err: fmt.Errorf("scraper script not found at %s", scriptPath)}
+		// Determine scraper type based on URL or metadata
+		docType := "mintlify"
+		if dt, ok := m.selected.metadata.Metadata["doc_type"].(string); ok {
+			docType = dt
 		}
-
-		// Run the Python scraper
-		cmd := exec.Command("python3", scriptPath, m.selected.metadata.RootURL, m.selected.path)
 		
-		output, err := cmd.CombinedOutput()
-		if err != nil {
-			return scrapeCompleteMsg{err: fmt.Errorf("scraper failed: %v\nOutput: %s", err, string(output))}
+		// Check URL patterns
+		if strings.Contains(m.selected.metadata.RootURL, "modal.com") {
+			docType = "modal"
+		}
+		
+		// Run the appropriate Go scraper
+		var scrapeErr error
+		switch docType {
+		case "modal":
+			scraper := scraper.NewModalScraper(m.selected.path)
+			scrapeErr = scraper.Scrape()
+		default:
+			// Fall back to Python scraper for now
+			scriptPath := "scripts/scrape_mintlify.py"
+			if _, err := os.Stat(scriptPath); os.IsNotExist(err) {
+				return scrapeCompleteMsg{err: fmt.Errorf("scraper script not found at %s", scriptPath)}
+			}
+			
+			cmd := exec.Command("python3", scriptPath, m.selected.metadata.RootURL, m.selected.path)
+			output, err := cmd.CombinedOutput()
+			if err != nil {
+				return scrapeCompleteMsg{err: fmt.Errorf("scraper failed: %v\nOutput: %s", err, string(output))}
+			}
+		}
+		
+		if scrapeErr != nil {
+			return scrapeCompleteMsg{err: fmt.Errorf("scraper failed: %v", scrapeErr)}
 		}
 
 		// Read the updated metadata to get file count

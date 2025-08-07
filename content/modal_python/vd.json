@@ -1,12 +1,2983 @@
 {
-  "title": "Modal.com Python Docs",
-  "description": "You can infer the rest",
-  "root_url": "https://modal.com/docs/",
-  "scrape_date": "2025-08-06T01:40:03.341969-07:00",
+  "title": "Modal Documentation",
+  "description": "Documentation scraped from https://modal.com/docs",
+  "root_url": "https://modal.com/docs",
+  "scrape_date": "2025-08-06T22:49:41Z",
   "version": "1.0.0",
-  "files": [],
+  "files": [
+    {
+      "path": "docs.md",
+      "url": "https://modal.com/docs",
+      "title": "Modal Documentation",
+      "scraped_at": "2025-08-06T22:49:41Z"
+    },
+    {
+      "path": "docs/guide.md",
+      "url": "https://modal.com/docs/guide",
+      "title": "Introduction",
+      "scraped_at": "2025-08-06T22:49:42Z"
+    },
+    {
+      "path": "docs/examples.md",
+      "url": "https://modal.com/docs/examples",
+      "title": "Featured examples | Modal Docs",
+      "scraped_at": "2025-08-06T22:49:42Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:49:43Z"
+    },
+    {
+      "path": "playground.md",
+      "url": "https://modal.com/playground",
+      "title": "Modal",
+      "scraped_at": "2025-08-06T22:49:44Z"
+    },
+    {
+      "path": "playground/get_started.md",
+      "url": "https://modal.com/playground/get_started",
+      "title": "Modal",
+      "scraped_at": "2025-08-06T22:49:45Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:49:45Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:49:47Z"
+    },
+    {
+      "path": "docs/examples/agent.md",
+      "url": "https://modal.com/docs/examples/agent",
+      "title": "Build a coding agent with Modal Sandboxes and LangGraph",
+      "scraped_at": "2025-08-06T22:49:47Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:49:48Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:49:49Z"
+    },
+    {
+      "path": "docs/examples/image_to_image.md",
+      "url": "https://modal.com/docs/examples/image_to_image",
+      "title": "Edit images with Flux Kontext",
+      "scraped_at": "2025-08-06T22:49:49Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:49:50Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:49:51Z"
+    },
+    {
+      "path": "docs/examples/flux.md",
+      "url": "https://modal.com/docs/examples/flux",
+      "title": "Run Flux fast on H100s withtorch.compile",
+      "scraped_at": "2025-08-06T22:49:51Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:49:52Z"
+    },
+    {
+      "path": "docs/examples/streaming_kyutai_stt.md",
+      "url": "https://modal.com/docs/examples/streaming_kyutai_stt",
+      "title": "Stream transcriptions with Kyutai STT",
+      "scraped_at": "2025-08-06T22:49:53Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:49:53Z"
+    },
+    {
+      "path": "docs/examples/musicgen.md",
+      "url": "https://modal.com/docs/examples/musicgen",
+      "title": "Create your own music samples with MusicGen",
+      "scraped_at": "2025-08-06T22:49:54Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:49:55Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:49:55Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:49:56Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:49:57Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:49:57Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:49:58Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:49:59Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:49:59Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:50:00Z"
+    },
+    {
+      "path": "company.md",
+      "url": "https://modal.com/company",
+      "title": "Making cloud developmentwork likemagic",
+      "scraped_at": "2025-08-06T22:50:01Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:50:02Z"
+    },
+    {
+      "path": "docs/guide/images.md",
+      "url": "https://modal.com/docs/guide/images",
+      "title": "Images",
+      "scraped_at": "2025-08-06T22:50:03Z"
+    },
+    {
+      "path": "docs/guide/private-registries.md",
+      "url": "https://modal.com/docs/guide/private-registries",
+      "title": "Private registries",
+      "scraped_at": "2025-08-06T22:50:04Z"
+    },
+    {
+      "path": "docs/guide/fast-pull-from-registry.md",
+      "url": "https://modal.com/docs/guide/fast-pull-from-registry",
+      "title": "Fast pull from registry",
+      "scraped_at": "2025-08-06T22:50:04Z"
+    },
+    {
+      "path": "docs/guide/gpu.md",
+      "url": "https://modal.com/docs/guide/gpu",
+      "title": "GPU acceleration",
+      "scraped_at": "2025-08-06T22:50:05Z"
+    },
+    {
+      "path": "docs/guide/cuda.md",
+      "url": "https://modal.com/docs/guide/cuda",
+      "title": "Using CUDA on Modal",
+      "scraped_at": "2025-08-06T22:50:06Z"
+    },
+    {
+      "path": "docs/guide/resources.md",
+      "url": "https://modal.com/docs/guide/resources",
+      "title": "Reserving CPU and memory",
+      "scraped_at": "2025-08-06T22:50:06Z"
+    },
+    {
+      "path": "docs/guide/scale.md",
+      "url": "https://modal.com/docs/guide/scale",
+      "title": "Scaling out",
+      "scraped_at": "2025-08-06T22:50:07Z"
+    },
+    {
+      "path": "docs/guide/concurrent-inputs.md",
+      "url": "https://modal.com/docs/guide/concurrent-inputs",
+      "title": "Input concurrency",
+      "scraped_at": "2025-08-06T22:50:08Z"
+    },
+    {
+      "path": "docs/guide/batch-processing.md",
+      "url": "https://modal.com/docs/guide/batch-processing",
+      "title": "Batch Processing",
+      "scraped_at": "2025-08-06T22:50:08Z"
+    },
+    {
+      "path": "docs/guide/job-queue.md",
+      "url": "https://modal.com/docs/guide/job-queue",
+      "title": "Job processing",
+      "scraped_at": "2025-08-06T22:50:09Z"
+    },
+    {
+      "path": "docs/guide/dynamic-batching.md",
+      "url": "https://modal.com/docs/guide/dynamic-batching",
+      "title": "Dynamic batching (beta)",
+      "scraped_at": "2025-08-06T22:50:10Z"
+    },
+    {
+      "path": "docs/guide/multi-node-training.md",
+      "url": "https://modal.com/docs/guide/multi-node-training",
+      "title": "Multi-node clusters (beta)",
+      "scraped_at": "2025-08-06T22:50:11Z"
+    },
+    {
+      "path": "docs/guide/cron.md",
+      "url": "https://modal.com/docs/guide/cron",
+      "title": "Scheduling remote cron jobs",
+      "scraped_at": "2025-08-06T22:50:11Z"
+    },
+    {
+      "path": "docs/guide/apps.md",
+      "url": "https://modal.com/docs/guide/apps",
+      "title": "Apps, Functions, and entrypoints",
+      "scraped_at": "2025-08-06T22:50:12Z"
+    },
+    {
+      "path": "docs/guide/managing-deployments.md",
+      "url": "https://modal.com/docs/guide/managing-deployments",
+      "title": "Managing deployments",
+      "scraped_at": "2025-08-06T22:50:13Z"
+    },
+    {
+      "path": "docs/guide/trigger-deployed-functions.md",
+      "url": "https://modal.com/docs/guide/trigger-deployed-functions",
+      "title": "Invoking deployed functions",
+      "scraped_at": "2025-08-06T22:50:14Z"
+    },
+    {
+      "path": "docs/guide/continuous-deployment.md",
+      "url": "https://modal.com/docs/guide/continuous-deployment",
+      "title": "Continuous deployment",
+      "scraped_at": "2025-08-06T22:50:15Z"
+    },
+    {
+      "path": "docs/guide/restricted-access.md",
+      "url": "https://modal.com/docs/guide/restricted-access",
+      "title": "Running untrusted code in Functions",
+      "scraped_at": "2025-08-06T22:50:15Z"
+    },
+    {
+      "path": "docs/guide/secrets.md",
+      "url": "https://modal.com/docs/guide/secrets",
+      "title": "Secrets",
+      "scraped_at": "2025-08-06T22:50:16Z"
+    },
+    {
+      "path": "docs/guide/environment_variables.md",
+      "url": "https://modal.com/docs/guide/environment_variables",
+      "title": "Environment variables",
+      "scraped_at": "2025-08-06T22:50:17Z"
+    },
+    {
+      "path": "docs/guide/webhooks.md",
+      "url": "https://modal.com/docs/guide/webhooks",
+      "title": "Web endpoints",
+      "scraped_at": "2025-08-06T22:50:18Z"
+    },
+    {
+      "path": "docs/guide/streaming-endpoints.md",
+      "url": "https://modal.com/docs/guide/streaming-endpoints",
+      "title": "Streaming endpoints",
+      "scraped_at": "2025-08-06T22:50:19Z"
+    },
+    {
+      "path": "docs/guide/webhook-urls.md",
+      "url": "https://modal.com/docs/guide/webhook-urls",
+      "title": "Web endpoint URLs",
+      "scraped_at": "2025-08-06T22:50:20Z"
+    },
+    {
+      "path": "docs/guide/webhook-timeouts.md",
+      "url": "https://modal.com/docs/guide/webhook-timeouts",
+      "title": "Request timeouts",
+      "scraped_at": "2025-08-06T22:50:20Z"
+    },
+    {
+      "path": "docs/guide/webhook-proxy-auth.md",
+      "url": "https://modal.com/docs/guide/webhook-proxy-auth",
+      "title": "Proxy Auth Tokens",
+      "scraped_at": "2025-08-06T22:50:21Z"
+    },
+    {
+      "path": "docs/guide/tunnels.md",
+      "url": "https://modal.com/docs/guide/tunnels",
+      "title": "Tunnels",
+      "scraped_at": "2025-08-06T22:50:22Z"
+    },
+    {
+      "path": "docs/guide/proxy-ips.md",
+      "url": "https://modal.com/docs/guide/proxy-ips",
+      "title": "Proxies (beta)",
+      "scraped_at": "2025-08-06T22:50:23Z"
+    },
+    {
+      "path": "docs/guide/private-networking.md",
+      "url": "https://modal.com/docs/guide/private-networking",
+      "title": "Cluster networking",
+      "scraped_at": "2025-08-06T22:50:23Z"
+    },
+    {
+      "path": "docs/guide/local-data.md",
+      "url": "https://modal.com/docs/guide/local-data",
+      "title": "Passing local data",
+      "scraped_at": "2025-08-06T22:50:24Z"
+    },
+    {
+      "path": "docs/guide/volumes.md",
+      "url": "https://modal.com/docs/guide/volumes",
+      "title": "Volumes",
+      "scraped_at": "2025-08-06T22:50:25Z"
+    },
+    {
+      "path": "docs/guide/model-weights.md",
+      "url": "https://modal.com/docs/guide/model-weights",
+      "title": "Storing model weights on Modal",
+      "scraped_at": "2025-08-06T22:50:26Z"
+    },
+    {
+      "path": "docs/guide/cloud-bucket-mounts.md",
+      "url": "https://modal.com/docs/guide/cloud-bucket-mounts",
+      "title": "Cloud bucket mounts",
+      "scraped_at": "2025-08-06T22:50:27Z"
+    },
+    {
+      "path": "docs/guide/dicts.md",
+      "url": "https://modal.com/docs/guide/dicts",
+      "title": "Dicts",
+      "scraped_at": "2025-08-06T22:50:28Z"
+    },
+    {
+      "path": "docs/guide/queues.md",
+      "url": "https://modal.com/docs/guide/queues",
+      "title": "Queues",
+      "scraped_at": "2025-08-06T22:50:29Z"
+    },
+    {
+      "path": "docs/guide/dataset-ingestion.md",
+      "url": "https://modal.com/docs/guide/dataset-ingestion",
+      "title": "Large dataset ingestion",
+      "scraped_at": "2025-08-06T22:50:30Z"
+    },
+    {
+      "path": "docs/guide/sandbox.md",
+      "url": "https://modal.com/docs/guide/sandbox",
+      "title": "Sandboxes",
+      "scraped_at": "2025-08-06T22:50:30Z"
+    },
+    {
+      "path": "docs/guide/sandbox-spawn.md",
+      "url": "https://modal.com/docs/guide/sandbox-spawn",
+      "title": "Running commands in Sandboxes",
+      "scraped_at": "2025-08-06T22:50:31Z"
+    },
+    {
+      "path": "docs/guide/sandbox-networking.md",
+      "url": "https://modal.com/docs/guide/sandbox-networking",
+      "title": "Networking and security",
+      "scraped_at": "2025-08-06T22:50:32Z"
+    },
+    {
+      "path": "docs/guide/sandbox-files.md",
+      "url": "https://modal.com/docs/guide/sandbox-files",
+      "title": "Filesystem Access",
+      "scraped_at": "2025-08-06T22:50:33Z"
+    },
+    {
+      "path": "docs/guide/sandbox-snapshots.md",
+      "url": "https://modal.com/docs/guide/sandbox-snapshots",
+      "title": "Snapshots",
+      "scraped_at": "2025-08-06T22:50:34Z"
+    },
+    {
+      "path": "docs/guide/cold-start.md",
+      "url": "https://modal.com/docs/guide/cold-start",
+      "title": "Cold start performance",
+      "scraped_at": "2025-08-06T22:50:34Z"
+    },
+    {
+      "path": "docs/guide/memory-snapshot.md",
+      "url": "https://modal.com/docs/guide/memory-snapshot",
+      "title": "Memory Snapshot",
+      "scraped_at": "2025-08-06T22:50:35Z"
+    },
+    {
+      "path": "docs/guide/geographic-latency.md",
+      "url": "https://modal.com/docs/guide/geographic-latency",
+      "title": "Geographic Latency",
+      "scraped_at": "2025-08-06T22:50:36Z"
+    },
+    {
+      "path": "docs/guide/retries.md",
+      "url": "https://modal.com/docs/guide/retries",
+      "title": "Failures and retries",
+      "scraped_at": "2025-08-06T22:50:37Z"
+    },
+    {
+      "path": "docs/guide/preemption.md",
+      "url": "https://modal.com/docs/guide/preemption",
+      "title": "Preemption",
+      "scraped_at": "2025-08-06T22:50:37Z"
+    },
+    {
+      "path": "docs/guide/timeouts.md",
+      "url": "https://modal.com/docs/guide/timeouts",
+      "title": "Timeouts",
+      "scraped_at": "2025-08-06T22:50:38Z"
+    },
+    {
+      "path": "docs/guide/gpu-health.md",
+      "url": "https://modal.com/docs/guide/gpu-health",
+      "title": "GPU Health",
+      "scraped_at": "2025-08-06T22:50:39Z"
+    },
+    {
+      "path": "docs/guide/troubleshooting.md",
+      "url": "https://modal.com/docs/guide/troubleshooting",
+      "title": "Troubleshooting",
+      "scraped_at": "2025-08-06T22:50:40Z"
+    },
+    {
+      "path": "docs/guide/security.md",
+      "url": "https://modal.com/docs/guide/security",
+      "title": "Security and privacy at Modal",
+      "scraped_at": "2025-08-06T22:50:40Z"
+    },
+    {
+      "path": "docs/guide/notebooks-modal.md",
+      "url": "https://modal.com/docs/guide/notebooks-modal",
+      "title": "Modal Notebooks (beta)",
+      "scraped_at": "2025-08-06T22:50:41Z"
+    },
+    {
+      "path": "docs/guide/oidc-integration.md",
+      "url": "https://modal.com/docs/guide/oidc-integration",
+      "title": "Using OIDC to authenticate with external services",
+      "scraped_at": "2025-08-06T22:50:42Z"
+    },
+    {
+      "path": "docs/guide/datadog-integration.md",
+      "url": "https://modal.com/docs/guide/datadog-integration",
+      "title": "Connecting Modal to your Datadog account",
+      "scraped_at": "2025-08-06T22:50:43Z"
+    },
+    {
+      "path": "docs/guide/otel-integration.md",
+      "url": "https://modal.com/docs/guide/otel-integration",
+      "title": "Connecting Modal to your OpenTelemetry Provider",
+      "scraped_at": "2025-08-06T22:50:44Z"
+    },
+    {
+      "path": "docs/guide/okta-sso.md",
+      "url": "https://modal.com/docs/guide/okta-sso",
+      "title": "Okta SSO",
+      "scraped_at": "2025-08-06T22:50:45Z"
+    },
+    {
+      "path": "docs/guide/slack-notifications.md",
+      "url": "https://modal.com/docs/guide/slack-notifications",
+      "title": "Slack notifications (beta)",
+      "scraped_at": "2025-08-06T22:50:45Z"
+    },
+    {
+      "path": "docs/guide/workspaces.md",
+      "url": "https://modal.com/docs/guide/workspaces",
+      "title": "Workspaces",
+      "scraped_at": "2025-08-06T22:50:46Z"
+    },
+    {
+      "path": "docs/guide/environments.md",
+      "url": "https://modal.com/docs/guide/environments",
+      "title": "Environments",
+      "scraped_at": "2025-08-06T22:50:47Z"
+    },
+    {
+      "path": "docs/guide/modal-user-account-setup.md",
+      "url": "https://modal.com/docs/guide/modal-user-account-setup",
+      "title": "Modal user account setup",
+      "scraped_at": "2025-08-06T22:50:48Z"
+    },
+    {
+      "path": "docs/guide/service-users.md",
+      "url": "https://modal.com/docs/guide/service-users",
+      "title": "Service Users (beta)",
+      "scraped_at": "2025-08-06T22:50:48Z"
+    },
+    {
+      "path": "docs/guide/modal-1-0-migration.md",
+      "url": "https://modal.com/docs/guide/modal-1-0-migration",
+      "title": "Modal 1.0 migration guide",
+      "scraped_at": "2025-08-06T22:50:49Z"
+    },
+    {
+      "path": "docs/guide/project-structure.md",
+      "url": "https://modal.com/docs/guide/project-structure",
+      "title": "Project structure",
+      "scraped_at": "2025-08-06T22:50:50Z"
+    },
+    {
+      "path": "docs/guide/developing-debugging.md",
+      "url": "https://modal.com/docs/guide/developing-debugging",
+      "title": "Developing and debugging",
+      "scraped_at": "2025-08-06T22:50:51Z"
+    },
+    {
+      "path": "docs/guide/developing-with-llms.md",
+      "url": "https://modal.com/docs/guide/developing-with-llms",
+      "title": "Developing Modal code with LLMs",
+      "scraped_at": "2025-08-06T22:50:52Z"
+    },
+    {
+      "path": "docs/guide/notebooks.md",
+      "url": "https://modal.com/docs/guide/notebooks",
+      "title": "Jupyter notebooks",
+      "scraped_at": "2025-08-06T22:50:52Z"
+    },
+    {
+      "path": "docs/guide/async.md",
+      "url": "https://modal.com/docs/guide/async",
+      "title": "Asynchronous API usage",
+      "scraped_at": "2025-08-06T22:50:53Z"
+    },
+    {
+      "path": "docs/guide/global-variables.md",
+      "url": "https://modal.com/docs/guide/global-variables",
+      "title": "Global variables",
+      "scraped_at": "2025-08-06T22:50:54Z"
+    },
+    {
+      "path": "docs/guide/region-selection.md",
+      "url": "https://modal.com/docs/guide/region-selection",
+      "title": "Region selection",
+      "scraped_at": "2025-08-06T22:50:55Z"
+    },
+    {
+      "path": "docs/guide/lifecycle-functions.md",
+      "url": "https://modal.com/docs/guide/lifecycle-functions",
+      "title": "Container lifecycle hooks",
+      "scraped_at": "2025-08-06T22:50:55Z"
+    },
+    {
+      "path": "docs/guide/parametrized-functions.md",
+      "url": "https://modal.com/docs/guide/parametrized-functions",
+      "title": "Parametrized functions",
+      "scraped_at": "2025-08-06T22:50:56Z"
+    },
+    {
+      "path": "docs/guide/s3-gateway-endpoints.md",
+      "url": "https://modal.com/docs/guide/s3-gateway-endpoints",
+      "title": "S3 Gateway endpoints",
+      "scraped_at": "2025-08-06T22:50:57Z"
+    },
+    {
+      "path": "docs/guide/gpu-metrics.md",
+      "url": "https://modal.com/docs/guide/gpu-metrics",
+      "title": "GPU Metrics",
+      "scraped_at": "2025-08-06T22:50:58Z"
+    },
+    {
+      "path": "docs/guide.md",
+      "url": "https://modal.com/docs/guide#getting-started",
+      "title": "Introduction",
+      "scraped_at": "2025-08-06T22:50:58Z"
+    },
+    {
+      "path": "index.md",
+      "url": "https://modal.com",
+      "title": "AI infrastructurethatdevelopers love",
+      "scraped_at": "2025-08-06T22:51:00Z"
+    },
+    {
+      "path": "docs/examples/hello_world.md",
+      "url": "https://modal.com/docs/examples/hello_world",
+      "title": "Hello, world!",
+      "scraped_at": "2025-08-06T22:51:01Z"
+    },
+    {
+      "path": "docs/examples/webscraper.md",
+      "url": "https://modal.com/docs/examples/webscraper",
+      "title": "A simple web scraper",
+      "scraped_at": "2025-08-06T22:51:02Z"
+    },
+    {
+      "path": "docs/guide.md",
+      "url": "https://modal.com/docs/guide#how-does-it-work",
+      "title": "Introduction",
+      "scraped_at": "2025-08-06T22:51:02Z"
+    },
+    {
+      "path": "docs/guide.md",
+      "url": "https://modal.com/docs/guide#introduction",
+      "title": "Introduction",
+      "scraped_at": "2025-08-06T22:51:03Z"
+    },
+    {
+      "path": "docs/examples/basic_web.md",
+      "url": "https://modal.com/docs/examples/basic_web",
+      "title": "Hello world wide web!",
+      "scraped_at": "2025-08-06T22:51:04Z"
+    },
+    {
+      "path": "docs/examples/sgl_vlm.md",
+      "url": "https://modal.com/docs/examples/sgl_vlm",
+      "title": "Run Qwen2-VL on SGLang for Visual QA",
+      "scraped_at": "2025-08-06T22:51:05Z"
+    },
+    {
+      "path": "docs/examples/tokasaurus_throughput.md",
+      "url": "https://modal.com/docs/examples/tokasaurus_throughput",
+      "title": "High-throughput LLM inference with Tokasaurus (LLama 3.2 1B Instruct)",
+      "scraped_at": "2025-08-06T22:51:06Z"
+    },
+    {
+      "path": "docs/examples/llm-finetuning.md",
+      "url": "https://modal.com/docs/examples/llm-finetuning",
+      "title": "DoppelBot: Fine-tune an LLM to replace your CEO",
+      "scraped_at": "2025-08-06T22:51:07Z"
+    },
+    {
+      "path": "docs/examples/diffusers_lora_finetune.md",
+      "url": "https://modal.com/docs/examples/diffusers_lora_finetune",
+      "title": "Fine-tune Flux on your pet using LoRA",
+      "scraped_at": "2025-08-06T22:51:08Z"
+    },
+    {
+      "path": "docs/examples/ltx.md",
+      "url": "https://modal.com/docs/examples/ltx",
+      "title": "Generate videos from prompts with Lightricks LTX-Video",
+      "scraped_at": "2025-08-06T22:51:09Z"
+    },
+    {
+      "path": "docs/examples/chatterbox_tts.md",
+      "url": "https://modal.com/docs/examples/chatterbox_tts",
+      "title": "Create a Chatterbox TTS API on Modal",
+      "scraped_at": "2025-08-06T22:51:10Z"
+    },
+    {
+      "path": "docs/examples/fastrtc_flip_webcam.md",
+      "url": "https://modal.com/docs/examples/fastrtc_flip_webcam",
+      "title": "Run a FastRTC app on Modal",
+      "scraped_at": "2025-08-06T22:51:11Z"
+    },
+    {
+      "path": "docs/examples/anthropic_computer_use.md",
+      "url": "https://modal.com/docs/examples/anthropic_computer_use",
+      "title": "Run Anthropic\u2019s computer use demo in a Modal Sandbox",
+      "scraped_at": "2025-08-06T22:51:12Z"
+    },
+    {
+      "path": "docs/examples/simple_code_interpreter.md",
+      "url": "https://modal.com/docs/examples/simple_code_interpreter",
+      "title": "Build a stateful, sandboxed code interpreter",
+      "scraped_at": "2025-08-06T22:51:13Z"
+    },
+    {
+      "path": "docs/examples/safe_code_execution.md",
+      "url": "https://modal.com/docs/examples/safe_code_execution",
+      "title": "Run arbitrary code in a sandboxed environment",
+      "scraped_at": "2025-08-06T22:51:14Z"
+    },
+    {
+      "path": "docs/examples/jupyter_sandbox.md",
+      "url": "https://modal.com/docs/examples/jupyter_sandbox",
+      "title": "Run a Jupyter notebook in a Modal Sandbox",
+      "scraped_at": "2025-08-06T22:51:14Z"
+    },
+    {
+      "path": "docs/examples/grpo_verl.md",
+      "url": "https://modal.com/docs/examples/grpo_verl",
+      "title": "Train a model to solve math problems using GRPO and verl",
+      "scraped_at": "2025-08-06T22:51:15Z"
+    },
+    {
+      "path": "docs/examples/grpo_trl.md",
+      "url": "https://modal.com/docs/examples/grpo_trl",
+      "title": "Train a model to solve coding problems using GRPO and TRL",
+      "scraped_at": "2025-08-06T22:51:16Z"
+    },
+    {
+      "path": "docs/examples/amazon_embeddings.md",
+      "url": "https://modal.com/docs/examples/amazon_embeddings",
+      "title": "Embed 30 million Amazon reviews at 575k tokens per second with Qwen2-7B",
+      "scraped_at": "2025-08-06T22:51:17Z"
+    },
+    {
+      "path": "docs/examples/mongodb-search.md",
+      "url": "https://modal.com/docs/examples/mongodb-search",
+      "title": "Using MongoDB Atlas Vector and GeoJSON Search with Modal",
+      "scraped_at": "2025-08-06T22:51:18Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_webapp.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_webapp",
+      "title": "Serve a document OCR web app",
+      "scraped_at": "2025-08-06T22:51:19Z"
+    },
+    {
+      "path": "docs/examples/hp_sweep_gpt.md",
+      "url": "https://modal.com/docs/examples/hp_sweep_gpt",
+      "title": "Train an SLM from scratch with early-stopping grid search over hyperparameters",
+      "scraped_at": "2025-08-06T22:51:20Z"
+    },
+    {
+      "path": "docs/examples/long-training.md",
+      "url": "https://modal.com/docs/examples/long-training",
+      "title": "Run long, resumable training jobs on Modal",
+      "scraped_at": "2025-08-06T22:51:21Z"
+    },
+    {
+      "path": "docs/examples/finetune_yolo.md",
+      "url": "https://modal.com/docs/examples/finetune_yolo",
+      "title": "Fine-tune open source YOLO models for object detection",
+      "scraped_at": "2025-08-06T22:51:22Z"
+    },
+    {
+      "path": "docs/examples/blender_video.md",
+      "url": "https://modal.com/docs/examples/blender_video",
+      "title": "Render a video with Blender on many GPUs or CPUs in parallel",
+      "scraped_at": "2025-08-06T22:51:23Z"
+    },
+    {
+      "path": "docs/examples/serve_streamlit.md",
+      "url": "https://modal.com/docs/examples/serve_streamlit",
+      "title": "Run and share Streamlit apps",
+      "scraped_at": "2025-08-06T22:51:24Z"
+    },
+    {
+      "path": "docs/examples/comfyapp.md",
+      "url": "https://modal.com/docs/examples/comfyapp",
+      "title": "Run Flux on ComfyUI as an API",
+      "scraped_at": "2025-08-06T22:51:25Z"
+    },
+    {
+      "path": "docs/examples/cron_datasette.md",
+      "url": "https://modal.com/docs/examples/cron_datasette",
+      "title": "Publish interactive datasets with Datasette",
+      "scraped_at": "2025-08-06T22:51:26Z"
+    },
+    {
+      "path": "docs/examples/algolia_indexer.md",
+      "url": "https://modal.com/docs/examples/algolia_indexer",
+      "title": "Algolia docsearch crawler",
+      "scraped_at": "2025-08-06T22:51:27Z"
+    },
+    {
+      "path": "docs/examples/discord_bot.md",
+      "url": "https://modal.com/docs/examples/discord_bot",
+      "title": "Serve a Discord Bot on Modal",
+      "scraped_at": "2025-08-06T22:51:28Z"
+    },
+    {
+      "path": "docs/examples/db_to_sheet.md",
+      "url": "https://modal.com/docs/examples/db_to_sheet",
+      "title": "Write to Google Sheets from Postgres",
+      "scraped_at": "2025-08-06T22:51:29Z"
+    },
+    {
+      "path": "docs/examples/modal_tailscale.md",
+      "url": "https://modal.com/docs/examples/modal_tailscale",
+      "title": "Add Modal Apps to Tailscale",
+      "scraped_at": "2025-08-06T22:51:30Z"
+    },
+    {
+      "path": "docs/examples/pushgateway.md",
+      "url": "https://modal.com/docs/examples/pushgateway",
+      "title": "Publish custom metrics with Prometheus Pushgateway",
+      "scraped_at": "2025-08-06T22:51:31Z"
+    },
+    {
+      "path": "docs/examples/dbt_duckdb.md",
+      "url": "https://modal.com/docs/examples/dbt_duckdb",
+      "title": "Build your own data warehouse with DuckDB, DBT, and Modal",
+      "scraped_at": "2025-08-06T22:51:32Z"
+    },
+    {
+      "path": "docs/examples/cloud_bucket_mount_loras.md",
+      "url": "https://modal.com/docs/examples/cloud_bucket_mount_loras",
+      "title": "LoRAs Galore: Create a LoRA Playground with Modal, Gradio, and S3",
+      "scraped_at": "2025-08-06T22:51:33Z"
+    },
+    {
+      "path": "docs/examples/miscellaneous.md",
+      "url": "https://modal.com/docs/examples/miscellaneous",
+      "title": "Miscellaneous examples",
+      "scraped_at": "2025-08-06T22:51:33Z"
+    },
+    {
+      "path": "docs/reference/modal.App.md",
+      "url": "https://modal.com/docs/reference/modal.App",
+      "title": "modal.App",
+      "scraped_at": "2025-08-06T22:51:34Z"
+    },
+    {
+      "path": "docs/reference/modal.Client.md",
+      "url": "https://modal.com/docs/reference/modal.Client",
+      "title": "modal.Client",
+      "scraped_at": "2025-08-06T22:51:35Z"
+    },
+    {
+      "path": "docs/reference/modal.CloudBucketMount.md",
+      "url": "https://modal.com/docs/reference/modal.CloudBucketMount",
+      "title": "modal.CloudBucketMount",
+      "scraped_at": "2025-08-06T22:51:36Z"
+    },
+    {
+      "path": "docs/reference/modal.Cls.md",
+      "url": "https://modal.com/docs/reference/modal.Cls",
+      "title": "modal.Cls",
+      "scraped_at": "2025-08-06T22:51:37Z"
+    },
+    {
+      "path": "docs/reference/modal.Cron.md",
+      "url": "https://modal.com/docs/reference/modal.Cron",
+      "title": "modal.Cron",
+      "scraped_at": "2025-08-06T22:51:37Z"
+    },
+    {
+      "path": "docs/reference/modal.Dict.md",
+      "url": "https://modal.com/docs/reference/modal.Dict",
+      "title": "modal.Dict",
+      "scraped_at": "2025-08-06T22:51:38Z"
+    },
+    {
+      "path": "docs/reference/modal.Error.md",
+      "url": "https://modal.com/docs/reference/modal.Error",
+      "title": "modal.Error",
+      "scraped_at": "2025-08-06T22:51:39Z"
+    },
+    {
+      "path": "docs/reference/modal.FilePatternMatcher.md",
+      "url": "https://modal.com/docs/reference/modal.FilePatternMatcher",
+      "title": "modal.FilePatternMatcher",
+      "scraped_at": "2025-08-06T22:51:40Z"
+    },
+    {
+      "path": "docs/reference/modal.Function.md",
+      "url": "https://modal.com/docs/reference/modal.Function",
+      "title": "modal.Function",
+      "scraped_at": "2025-08-06T22:51:41Z"
+    },
+    {
+      "path": "docs/reference/modal.FunctionCall.md",
+      "url": "https://modal.com/docs/reference/modal.FunctionCall",
+      "title": "modal.FunctionCall",
+      "scraped_at": "2025-08-06T22:51:42Z"
+    },
+    {
+      "path": "docs/reference/modal.Image.md",
+      "url": "https://modal.com/docs/reference/modal.Image",
+      "title": "modal.Image",
+      "scraped_at": "2025-08-06T22:51:43Z"
+    },
+    {
+      "path": "docs/reference/modal.NetworkFileSystem.md",
+      "url": "https://modal.com/docs/reference/modal.NetworkFileSystem",
+      "title": "modal.NetworkFileSystem",
+      "scraped_at": "2025-08-06T22:51:44Z"
+    },
+    {
+      "path": "docs/reference/modal.Period.md",
+      "url": "https://modal.com/docs/reference/modal.Period",
+      "title": "modal.Period",
+      "scraped_at": "2025-08-06T22:51:44Z"
+    },
+    {
+      "path": "docs/reference/modal.Proxy.md",
+      "url": "https://modal.com/docs/reference/modal.Proxy",
+      "title": "modal.Proxy",
+      "scraped_at": "2025-08-06T22:51:45Z"
+    },
+    {
+      "path": "docs/reference/modal.Queue.md",
+      "url": "https://modal.com/docs/reference/modal.Queue",
+      "title": "modal.Queue",
+      "scraped_at": "2025-08-06T22:51:46Z"
+    },
+    {
+      "path": "docs/reference/modal.Retries.md",
+      "url": "https://modal.com/docs/reference/modal.Retries",
+      "title": "modal.Retries",
+      "scraped_at": "2025-08-06T22:51:47Z"
+    },
+    {
+      "path": "docs/reference/modal.Sandbox.md",
+      "url": "https://modal.com/docs/reference/modal.Sandbox",
+      "title": "modal.Sandbox",
+      "scraped_at": "2025-08-06T22:51:48Z"
+    },
+    {
+      "path": "docs/reference/modal.SandboxSnapshot.md",
+      "url": "https://modal.com/docs/reference/modal.SandboxSnapshot",
+      "title": "modal.SandboxSnapshot",
+      "scraped_at": "2025-08-06T22:51:48Z"
+    },
+    {
+      "path": "docs/reference/modal.Secret.md",
+      "url": "https://modal.com/docs/reference/modal.Secret",
+      "title": "modal.Secret",
+      "scraped_at": "2025-08-06T22:51:49Z"
+    },
+    {
+      "path": "docs/reference/modal.Tunnel.md",
+      "url": "https://modal.com/docs/reference/modal.Tunnel",
+      "title": "modal.Tunnel",
+      "scraped_at": "2025-08-06T22:51:50Z"
+    },
+    {
+      "path": "docs/reference/modal.Volume.md",
+      "url": "https://modal.com/docs/reference/modal.Volume",
+      "title": "modal.Volume",
+      "scraped_at": "2025-08-06T22:51:51Z"
+    },
+    {
+      "path": "docs/reference/modal.asgi_app.md",
+      "url": "https://modal.com/docs/reference/modal.asgi_app",
+      "title": "modal.asgi_app",
+      "scraped_at": "2025-08-06T22:51:52Z"
+    },
+    {
+      "path": "docs/reference/modal.batched.md",
+      "url": "https://modal.com/docs/reference/modal.batched",
+      "title": "modal.batched",
+      "scraped_at": "2025-08-06T22:51:53Z"
+    },
+    {
+      "path": "docs/reference/modal.call_graph.md",
+      "url": "https://modal.com/docs/reference/modal.call_graph",
+      "title": "modal.call_graph",
+      "scraped_at": "2025-08-06T22:51:53Z"
+    },
+    {
+      "path": "docs/reference/modal.concurrent.md",
+      "url": "https://modal.com/docs/reference/modal.concurrent",
+      "title": "modal.concurrent",
+      "scraped_at": "2025-08-06T22:51:54Z"
+    },
+    {
+      "path": "docs/reference/modal.container_process.md",
+      "url": "https://modal.com/docs/reference/modal.container_process",
+      "title": "modal.container_process",
+      "scraped_at": "2025-08-06T22:51:55Z"
+    },
+    {
+      "path": "docs/reference/modal.current_function_call_id.md",
+      "url": "https://modal.com/docs/reference/modal.current_function_call_id",
+      "title": "modal.current_function_call_id",
+      "scraped_at": "2025-08-06T22:51:56Z"
+    },
+    {
+      "path": "docs/reference/modal.current_input_id.md",
+      "url": "https://modal.com/docs/reference/modal.current_input_id",
+      "title": "modal.current_input_id",
+      "scraped_at": "2025-08-06T22:51:56Z"
+    },
+    {
+      "path": "docs/reference/modal.enable_output.md",
+      "url": "https://modal.com/docs/reference/modal.enable_output",
+      "title": "modal.enable_output",
+      "scraped_at": "2025-08-06T22:51:57Z"
+    },
+    {
+      "path": "docs/reference/modal.enter.md",
+      "url": "https://modal.com/docs/reference/modal.enter",
+      "title": "modal.enter",
+      "scraped_at": "2025-08-06T22:51:58Z"
+    },
+    {
+      "path": "docs/reference/modal.exit.md",
+      "url": "https://modal.com/docs/reference/modal.exit",
+      "title": "modal.exit",
+      "scraped_at": "2025-08-06T22:51:59Z"
+    },
+    {
+      "path": "docs/reference/modal.fastapi_endpoint.md",
+      "url": "https://modal.com/docs/reference/modal.fastapi_endpoint",
+      "title": "modal.fastapi_endpoint",
+      "scraped_at": "2025-08-06T22:51:59Z"
+    },
+    {
+      "path": "docs/reference/modal.file_io.md",
+      "url": "https://modal.com/docs/reference/modal.file_io",
+      "title": "modal.file_io",
+      "scraped_at": "2025-08-06T22:52:00Z"
+    },
+    {
+      "path": "docs/reference/modal.forward.md",
+      "url": "https://modal.com/docs/reference/modal.forward",
+      "title": "modal.forward",
+      "scraped_at": "2025-08-06T22:52:01Z"
+    },
+    {
+      "path": "docs/reference/modal.gpu.md",
+      "url": "https://modal.com/docs/reference/modal.gpu",
+      "title": "modal.gpu",
+      "scraped_at": "2025-08-06T22:52:02Z"
+    },
+    {
+      "path": "docs/reference/modal.interact.md",
+      "url": "https://modal.com/docs/reference/modal.interact",
+      "title": "modal.interact",
+      "scraped_at": "2025-08-06T22:52:03Z"
+    },
+    {
+      "path": "docs/reference/modal.io_streams.md",
+      "url": "https://modal.com/docs/reference/modal.io_streams",
+      "title": "modal.io_streams",
+      "scraped_at": "2025-08-06T22:52:03Z"
+    },
+    {
+      "path": "docs/reference/modal.is_local.md",
+      "url": "https://modal.com/docs/reference/modal.is_local",
+      "title": "modal.is_local",
+      "scraped_at": "2025-08-06T22:52:04Z"
+    },
+    {
+      "path": "docs/reference/modal.method.md",
+      "url": "https://modal.com/docs/reference/modal.method",
+      "title": "modal.method",
+      "scraped_at": "2025-08-06T22:52:05Z"
+    },
+    {
+      "path": "docs/reference/modal.parameter.md",
+      "url": "https://modal.com/docs/reference/modal.parameter",
+      "title": "modal.parameter",
+      "scraped_at": "2025-08-06T22:52:06Z"
+    },
+    {
+      "path": "docs/reference/modal.web_endpoint.md",
+      "url": "https://modal.com/docs/reference/modal.web_endpoint",
+      "title": "modal.web_endpoint",
+      "scraped_at": "2025-08-06T22:52:06Z"
+    },
+    {
+      "path": "docs/reference/modal.web_server.md",
+      "url": "https://modal.com/docs/reference/modal.web_server",
+      "title": "modal.web_server",
+      "scraped_at": "2025-08-06T22:52:07Z"
+    },
+    {
+      "path": "docs/reference/modal.wsgi_app.md",
+      "url": "https://modal.com/docs/reference/modal.wsgi_app",
+      "title": "modal.wsgi_app",
+      "scraped_at": "2025-08-06T22:52:08Z"
+    },
+    {
+      "path": "docs/reference/modal.exception.md",
+      "url": "https://modal.com/docs/reference/modal.exception",
+      "title": "modal.exception",
+      "scraped_at": "2025-08-06T22:52:09Z"
+    },
+    {
+      "path": "docs/reference/modal.config.md",
+      "url": "https://modal.com/docs/reference/modal.config",
+      "title": "modal.config",
+      "scraped_at": "2025-08-06T22:52:10Z"
+    },
+    {
+      "path": "docs/reference/cli/app.md",
+      "url": "https://modal.com/docs/reference/cli/app",
+      "title": "modal app",
+      "scraped_at": "2025-08-06T22:52:10Z"
+    },
+    {
+      "path": "docs/reference/cli/config.md",
+      "url": "https://modal.com/docs/reference/cli/config",
+      "title": "modal config",
+      "scraped_at": "2025-08-06T22:52:11Z"
+    },
+    {
+      "path": "docs/reference/cli/container.md",
+      "url": "https://modal.com/docs/reference/cli/container",
+      "title": "modal container",
+      "scraped_at": "2025-08-06T22:52:12Z"
+    },
+    {
+      "path": "docs/reference/cli/deploy.md",
+      "url": "https://modal.com/docs/reference/cli/deploy",
+      "title": "modal deploy",
+      "scraped_at": "2025-08-06T22:52:13Z"
+    },
+    {
+      "path": "docs/reference/cli/dict.md",
+      "url": "https://modal.com/docs/reference/cli/dict",
+      "title": "modal dict",
+      "scraped_at": "2025-08-06T22:52:13Z"
+    },
+    {
+      "path": "docs/reference/cli/environment.md",
+      "url": "https://modal.com/docs/reference/cli/environment",
+      "title": "modal environment",
+      "scraped_at": "2025-08-06T22:52:14Z"
+    },
+    {
+      "path": "docs/reference/cli/launch.md",
+      "url": "https://modal.com/docs/reference/cli/launch",
+      "title": "modal launch",
+      "scraped_at": "2025-08-06T22:52:15Z"
+    },
+    {
+      "path": "docs/reference/cli/nfs.md",
+      "url": "https://modal.com/docs/reference/cli/nfs",
+      "title": "modal nfs",
+      "scraped_at": "2025-08-06T22:52:16Z"
+    },
+    {
+      "path": "docs/reference/cli/profile.md",
+      "url": "https://modal.com/docs/reference/cli/profile",
+      "title": "modal profile",
+      "scraped_at": "2025-08-06T22:52:17Z"
+    },
+    {
+      "path": "docs/reference/cli/queue.md",
+      "url": "https://modal.com/docs/reference/cli/queue",
+      "title": "modal queue",
+      "scraped_at": "2025-08-06T22:52:17Z"
+    },
+    {
+      "path": "docs/reference/cli/run.md",
+      "url": "https://modal.com/docs/reference/cli/run",
+      "title": "modal run",
+      "scraped_at": "2025-08-06T22:52:18Z"
+    },
+    {
+      "path": "docs/reference/cli/secret.md",
+      "url": "https://modal.com/docs/reference/cli/secret",
+      "title": "modal secret",
+      "scraped_at": "2025-08-06T22:52:19Z"
+    },
+    {
+      "path": "docs/reference/cli/serve.md",
+      "url": "https://modal.com/docs/reference/cli/serve",
+      "title": "modal serve",
+      "scraped_at": "2025-08-06T22:52:19Z"
+    },
+    {
+      "path": "docs/reference/cli/setup.md",
+      "url": "https://modal.com/docs/reference/cli/setup",
+      "title": "modal setup",
+      "scraped_at": "2025-08-06T22:52:20Z"
+    },
+    {
+      "path": "docs/reference/cli/shell.md",
+      "url": "https://modal.com/docs/reference/cli/shell",
+      "title": "modal shell",
+      "scraped_at": "2025-08-06T22:52:21Z"
+    },
+    {
+      "path": "docs/reference/cli/token.md",
+      "url": "https://modal.com/docs/reference/cli/token",
+      "title": "modal token",
+      "scraped_at": "2025-08-06T22:52:22Z"
+    },
+    {
+      "path": "docs/reference/cli/volume.md",
+      "url": "https://modal.com/docs/reference/cli/volume",
+      "title": "modal volume",
+      "scraped_at": "2025-08-06T22:52:22Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#application-construction",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:23Z"
+    },
+    {
+      "path": "docs/reference/modal.App.md",
+      "url": "https://modal.com/docs/reference/modal.App#function",
+      "title": "modal.App",
+      "scraped_at": "2025-08-06T22:52:24Z"
+    },
+    {
+      "path": "docs/reference/modal.App.md",
+      "url": "https://modal.com/docs/reference/modal.App#cls",
+      "title": "modal.App",
+      "scraped_at": "2025-08-06T22:52:25Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#serverless-execution",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:26Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#extended-function-configuration",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:27Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#class-parametrization",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:28Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#lifecycle-hooks",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:28Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#web-integrations",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:29Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#function-semantics",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:30Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#scheduling",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:31Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#exception-handling",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:32Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#sandboxed-execution",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:32Z"
+    },
+    {
+      "path": "docs/reference/modal.container_process.md",
+      "url": "https://modal.com/docs/reference/modal.container_process#modalcontainer_processcontainerprocess",
+      "title": "modal.container_process",
+      "scraped_at": "2025-08-06T22:52:33Z"
+    },
+    {
+      "path": "docs/reference/modal.file_io.md",
+      "url": "https://modal.com/docs/reference/modal.file_io#modalfile_iofileio",
+      "title": "modal.file_io",
+      "scraped_at": "2025-08-06T22:52:34Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#container-configuration",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:35Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#data-primitives",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:36Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#persistent-storage",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:37Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#in-memory-storage",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:38Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#networking",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:39Z"
+    },
+    {
+      "path": "docs/reference.md",
+      "url": "https://modal.com/docs/reference#api-reference",
+      "title": "API Reference",
+      "scraped_at": "2025-08-06T22:52:39Z"
+    },
+    {
+      "path": "playground/custom_container.md",
+      "url": "https://modal.com/playground/custom_container",
+      "title": "Modal",
+      "scraped_at": "2025-08-06T22:52:40Z"
+    },
+    {
+      "path": "legal/terms.md",
+      "url": "https://modal.com/legal/terms",
+      "title": "MODAL TERMS OF SERVICE",
+      "scraped_at": "2025-08-06T22:52:41Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#set-up-the-container-image",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:42Z"
+    },
+    {
+      "path": "docs/guide/custom-container.md",
+      "url": "https://modal.com/docs/guide/custom-container",
+      "title": "Images",
+      "scraped_at": "2025-08-06T22:52:43Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#download-the-model-weights",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:44Z"
+    },
+    {
+      "path": "gpu-glossary/device-hardware/tensor-core.md",
+      "url": "https://modal.com/gpu-glossary/device-hardware/tensor-core",
+      "title": "What is a Tensor Core?",
+      "scraped_at": "2025-08-06T22:52:45Z"
+    },
+    {
+      "path": "gpu-glossary/device-hardware/streaming-multiprocessor-architecture.md",
+      "url": "https://modal.com/gpu-glossary/device-hardware/streaming-multiprocessor-architecture",
+      "title": "What is a Streaming Multiprocessor Architecture?",
+      "scraped_at": "2025-08-06T22:52:46Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#configuring-vllm",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:47Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#the-v1-engine",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:48Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#trading-off-fast-boots-and-token-generation-performance",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:49Z"
+    },
+    {
+      "path": "llm-almanac.md",
+      "url": "https://modal.com/llm-almanac",
+      "title": "LLM Engine Advisor",
+      "scraped_at": "2025-08-06T22:52:50Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#build-a-vllm-engine-and-serve-it",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:50Z"
+    },
+    {
+      "path": "docs/guide/webhooks.md",
+      "url": "https://modal.com/docs/guide/webhooks#non-asgi-web-servers",
+      "title": "Web endpoints",
+      "scraped_at": "2025-08-06T22:52:51Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#deploy-the-server",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:52Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#interact-with-the-server",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:53Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#testing-the-server",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:54Z"
+    },
+    {
+      "path": "docs/examples/vllm_inference.md",
+      "url": "https://modal.com/docs/examples/vllm_inference#run-openai-compatible-llm-inference-with-llama-31-8b-and-vllm",
+      "title": "Run OpenAI-compatible LLM inference with LLaMA 3.1-8B and vLLM",
+      "scraped_at": "2025-08-06T22:52:55Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#what-gpu-can-run-deepseek-r1-what-gpu-can-run-phi-4",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:52:56Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#calling-a-modal-function-from-the-command-line",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:52:57Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#compiling-llamacpp-with-cuda-support",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:52:58Z"
+    },
+    {
+      "path": "gpu-glossary/host-software/nvcc.md",
+      "url": "https://modal.com/gpu-glossary/host-software/nvcc",
+      "title": "What is the NVIDIA CUDA Compiler Driver?",
+      "scraped_at": "2025-08-06T22:52:59Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#storing-models-on-modal",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:53:00Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#storing-model-outputs-on-modal",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:53:01Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#running-llamacpp-as-a-modal-function",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:53:02Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#addenda",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:53:03Z"
+    },
+    {
+      "path": "docs/examples/llama_cpp.md",
+      "url": "https://modal.com/docs/examples/llama_cpp#run-large-and-small-language-models-with-llamacpp-deepseek-r1-phi-4",
+      "title": "Run large and small language models with llama.cpp (DeepSeek-R1, Phi-4)",
+      "scraped_at": "2025-08-06T22:53:04Z"
+    },
+    {
+      "path": "docs/examples/agent.md",
+      "url": "https://modal.com/docs/examples/agent#setup",
+      "title": "Build a coding agent with Modal Sandboxes and LangGraph",
+      "scraped_at": "2025-08-06T22:53:05Z"
+    },
+    {
+      "path": "secrets.md",
+      "url": "https://modal.com/secrets",
+      "title": "Sign in | Modal",
+      "scraped_at": "2025-08-06T22:53:06Z"
+    },
+    {
+      "path": "docs/examples/agent.md",
+      "url": "https://modal.com/docs/examples/agent#creating-a-sandbox",
+      "title": "Build a coding agent with Modal Sandboxes and LangGraph",
+      "scraped_at": "2025-08-06T22:53:07Z"
+    },
+    {
+      "path": "docs/examples/agent.md",
+      "url": "https://modal.com/docs/examples/agent#constructing-the-agents-graph",
+      "title": "Build a coding agent with Modal Sandboxes and LangGraph",
+      "scraped_at": "2025-08-06T22:53:08Z"
+    },
+    {
+      "path": "docs/examples/agent.md",
+      "url": "https://modal.com/docs/examples/agent#running-the-graph",
+      "title": "Build a coding agent with Modal Sandboxes and LangGraph",
+      "scraped_at": "2025-08-06T22:53:09Z"
+    },
+    {
+      "path": "docs/examples/agent.md",
+      "url": "https://modal.com/docs/examples/agent#build-a-coding-agent-with-modal-sandboxes-and-langgraph",
+      "title": "Build a coding agent with Modal Sandboxes and LangGraph",
+      "scraped_at": "2025-08-06T22:53:09Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#setup",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:10Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#define-a-container-image",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:11Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#caching-the-model-weights",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:12Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#the-model-class",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:13Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#transcribe-a-dataset",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:14Z"
+    },
+    {
+      "path": "docs/reference/modal.Function.md",
+      "url": "https://modal.com/docs/reference/modal.Function#map",
+      "title": "modal.Function",
+      "scraped_at": "2025-08-06T22:53:15Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#run-the-model",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:16Z"
+    },
+    {
+      "path": "docs/guide/apps.md",
+      "url": "https://modal.com/docs/guide/apps#entrypoints-for-ephemeral-apps",
+      "title": "Apps, Functions, and entrypoints",
+      "scraped_at": "2025-08-06T22:53:16Z"
+    },
+    {
+      "path": "docs/examples/batched_whisper.md",
+      "url": "https://modal.com/docs/examples/batched_whisper#fast-whisper-inference-using-dynamic-batching",
+      "title": "Fast Whisper inference using dynamic batching",
+      "scraped_at": "2025-08-06T22:53:17Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#code-overview",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:18Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#moshi-websocket-server",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:19Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#react-frontend",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:20Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#fastapi-server",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:20Z"
+    },
+    {
+      "path": "docs/reference/modal.asgi_app.md",
+      "url": "https://modal.com/docs/reference/modal.asgi_app#modalasgi_app",
+      "title": "modal.asgi_app",
+      "scraped_at": "2025-08-06T22:53:21Z"
+    },
+    {
+      "path": "docs/guide/webhooks.md",
+      "url": "https://modal.com/docs/guide/webhooks#developing-with-modal-serve",
+      "title": "Web endpoints",
+      "scraped_at": "2025-08-06T22:53:22Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#deploy",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:23Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#steal-this-example",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:24Z"
+    },
+    {
+      "path": "docs/examples/llm-voice-chat.md",
+      "url": "https://modal.com/docs/examples/llm-voice-chat#quillman-voice-chat-with-moshi",
+      "title": "QuiLLMan: Voice Chat with Moshi",
+      "scraped_at": "2025-08-06T22:53:24Z"
+    },
+    {
+      "path": "docs/examples/image_to_image.md",
+      "url": "https://modal.com/docs/examples/image_to_image#define-a-container-image",
+      "title": "Edit images with Flux Kontext",
+      "scraped_at": "2025-08-06T22:53:25Z"
+    },
+    {
+      "path": "docs/examples/image_to_image.md",
+      "url": "https://modal.com/docs/examples/image_to_image#setting-up-and-running-flux-kontext",
+      "title": "Edit images with Flux Kontext",
+      "scraped_at": "2025-08-06T22:53:26Z"
+    },
+    {
+      "path": "docs/guide/lifecycle-functions.md",
+      "url": "https://modal.com/docs/guide/lifecycle-functions#container-lifecycle-beta",
+      "title": "Container lifecycle hooks",
+      "scraped_at": "2025-08-06T22:53:27Z"
+    },
+    {
+      "path": "docs/examples/image_to_image.md",
+      "url": "https://modal.com/docs/examples/image_to_image#running-the-model-from-the-command-line",
+      "title": "Edit images with Flux Kontext",
+      "scraped_at": "2025-08-06T22:53:28Z"
+    },
+    {
+      "path": "docs/examples/image_to_image.md",
+      "url": "https://modal.com/docs/examples/image_to_image#edit-images-with-flux-kontext",
+      "title": "Edit images with Flux Kontext",
+      "scraped_at": "2025-08-06T22:53:28Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#setup",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:29Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#fold-a-protein-from-the-command-line",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:30Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#installing-boltz-2-python-dependencies-on-modal",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:31Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#storing-boltz-2-model-weights-on-modal-with-volumes",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:32Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#addenda",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:32Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#running-boltz-2-on-modal",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:33Z"
+    },
+    {
+      "path": "docs/examples/boltz_predict.md",
+      "url": "https://modal.com/docs/examples/boltz_predict#fold-proteins-with-boltz-2",
+      "title": "Fold proteins with Boltz-2",
+      "scraped_at": "2025-08-06T22:53:34Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#what-is-webrtc",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:35Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#what-makes-up-a-webrtc-application",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:36Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#how-do-i-run-a-webrtc-app-on-modal",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:37Z"
+    },
+    {
+      "path": "docs/guide/webhooks.md",
+      "url": "https://modal.com/docs/guide/webhooks#websockets",
+      "title": "Web endpoints",
+      "scraped_at": "2025-08-06T22:53:38Z"
+    },
+    {
+      "path": "docs/reference/modal.Function.md",
+      "url": "https://modal.com/docs/reference/modal.Function#spawn",
+      "title": "modal.Function",
+      "scraped_at": "2025-08-06T22:53:39Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#using-modal_webrtc-to-detect-objects-in-webcam-footage",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:40Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#setup",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:41Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#cache-weights-and-compute-graphs-on-a-volume",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:42Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#implement-yolo-object-detection-as-a-modalwebrtcpeer",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:43Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#implement-a-signalingserver",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:44Z"
+    },
+    {
+      "path": "docs/guide/webhooks.md",
+      "url": "https://modal.com/docs/guide/webhooks#asgi-apps---fastapi-fasthtml-starlette",
+      "title": "Web endpoints",
+      "scraped_at": "2025-08-06T22:53:45Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#addenda",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:46Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#yolo-helper-functions",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:47Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#testing-a-webrtc-application-on-modal",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:48Z"
+    },
+    {
+      "path": "docs/examples/webrtc_yolo.md",
+      "url": "https://modal.com/docs/examples/webrtc_yolo#real-time-object-detection-with-webrtc-and-yolo",
+      "title": "Real-time object detection with WebRTC and YOLO",
+      "scraped_at": "2025-08-06T22:53:49Z"
+    },
+    {
+      "path": "docs/examples/flux.md",
+      "url": "https://modal.com/docs/examples/flux#setting-up-the-image-and-dependencies",
+      "title": "Run Flux fast on H100s withtorch.compile",
+      "scraped_at": "2025-08-06T22:53:50Z"
+    },
+    {
+      "path": "docs/examples/flux.md",
+      "url": "https://modal.com/docs/examples/flux#defining-a-parameterized-model-inference-class",
+      "title": "Run Flux fast on H100s withtorch.compile",
+      "scraped_at": "2025-08-06T22:53:51Z"
+    },
+    {
+      "path": "docs/examples/flux.md",
+      "url": "https://modal.com/docs/examples/flux#calling-our-inference-function",
+      "title": "Run Flux fast on H100s withtorch.compile",
+      "scraped_at": "2025-08-06T22:53:52Z"
+    },
+    {
+      "path": "docs/reference/modal.App.md",
+      "url": "https://modal.com/docs/reference/modal.App#local_entrypoint",
+      "title": "modal.App",
+      "scraped_at": "2025-08-06T22:53:53Z"
+    },
+    {
+      "path": "docs/examples/flux.md",
+      "url": "https://modal.com/docs/examples/flux#speeding-up-flux-with-torchcompile",
+      "title": "Run Flux fast on H100s withtorch.compile",
+      "scraped_at": "2025-08-06T22:53:54Z"
+    },
+    {
+      "path": "docs/reference/modal.parameter.md",
+      "url": "https://modal.com/docs/reference/modal.parameter#modalparameter",
+      "title": "modal.parameter",
+      "scraped_at": "2025-08-06T22:53:55Z"
+    },
+    {
+      "path": "docs/guide/parameterized-functions.md",
+      "url": "https://modal.com/docs/guide/parameterized-functions",
+      "title": "Parametrized functions",
+      "scraped_at": "2025-08-06T22:53:56Z"
+    },
+    {
+      "path": "docs/examples/flux.md",
+      "url": "https://modal.com/docs/examples/flux#run-flux-fast-on-h100s-with-torchcompile",
+      "title": "Run Flux fast on H100s withtorch.compile",
+      "scraped_at": "2025-08-06T22:53:57Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#overview",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:53:58Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#what-is-a-trt-llm-engine",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:53:59Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#installing-tensorrt-llm",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:00Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#downloading-the-model",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:01Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#setting-up-the-engine",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:02Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#quantization",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:03Z"
+    },
+    {
+      "path": "gpu-glossary/device-hardware/gpu-ram.md",
+      "url": "https://modal.com/gpu-glossary/device-hardware/gpu-ram",
+      "title": "What is GPU RAM?",
+      "scraped_at": "2025-08-06T22:54:04Z"
+    },
+    {
+      "path": "gpu-glossary/device-hardware/l1-data-cache.md",
+      "url": "https://modal.com/gpu-glossary/device-hardware/l1-data-cache",
+      "title": "What is the L1 Data Cache?",
+      "scraped_at": "2025-08-06T22:54:05Z"
+    },
+    {
+      "path": "gpu-glossary/device-hardware/register-file.md",
+      "url": "https://modal.com/gpu-glossary/device-hardware/register-file",
+      "title": "What is a Register File?",
+      "scraped_at": "2025-08-06T22:54:06Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#configure-plugins",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:07Z"
+    },
+    {
+      "path": "gpu-glossary/device-software/kernel.md",
+      "url": "https://modal.com/gpu-glossary/device-software/kernel",
+      "title": "What is a Kernel?",
+      "scraped_at": "2025-08-06T22:54:08Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#configure-speculative-decoding",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:09Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#set-the-build-config",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:10Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#serving-inference-under-the-doherty-threshold",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:11Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#calling-our-inference-function",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:12Z"
+    },
+    {
+      "path": "docs/examples/trtllm_latency.md",
+      "url": "https://modal.com/docs/examples/trtllm_latency#serve-an-interactive-language-model-app-with-latency-optimized-tensorrt-llm-llama-3-8b",
+      "title": "Serve an interactive language model app with latency-optimized TensorRT-LLM (LLaMA 3 8B)",
+      "scraped_at": "2025-08-06T22:54:13Z"
+    },
+    {
+      "path": "docs/examples/streaming_kyutai_stt.md",
+      "url": "https://modal.com/docs/examples/streaming_kyutai_stt#setup",
+      "title": "Stream transcriptions with Kyutai STT",
+      "scraped_at": "2025-08-06T22:54:14Z"
+    },
+    {
+      "path": "docs/examples/streaming_kyutai_stt.md",
+      "url": "https://modal.com/docs/examples/streaming_kyutai_stt#run-kyutai-stt-inference-on-modal",
+      "title": "Stream transcriptions with Kyutai STT",
+      "scraped_at": "2025-08-06T22:54:15Z"
+    },
+    {
+      "path": "docs/examples/streaming_kyutai_stt.md",
+      "url": "https://modal.com/docs/examples/streaming_kyutai_stt#run-a-local-python-client-to-test-streaming-stt",
+      "title": "Stream transcriptions with Kyutai STT",
+      "scraped_at": "2025-08-06T22:54:17Z"
+    },
+    {
+      "path": "docs/examples/streaming_kyutai_stt.md",
+      "url": "https://modal.com/docs/examples/streaming_kyutai_stt#deploy-a-streaming-stt-service-on-the-web",
+      "title": "Stream transcriptions with Kyutai STT",
+      "scraped_at": "2025-08-06T22:54:18Z"
+    },
+    {
+      "path": "docs/examples/streaming_kyutai_stt.md",
+      "url": "https://modal.com/docs/examples/streaming_kyutai_stt#stream-transcriptions-with-kyutai-stt",
+      "title": "Stream transcriptions with Kyutai STT",
+      "scraped_at": "2025-08-06T22:54:19Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen#setup",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:54:20Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen#data-prep",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:54:20Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen#training",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:54:21Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen#inference",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:54:22Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen#music-video-generation",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:54:23Z"
+    },
+    {
+      "path": "docs/examples/music-video-gen.md",
+      "url": "https://modal.com/docs/examples/music-video-gen#deploy-a-personalized-music-video-generation-service-on-modal",
+      "title": "Deploy a personalized music video generation service on Modal",
+      "scraped_at": "2025-08-06T22:54:24Z"
+    },
+    {
+      "path": "docs/examples/musicgen.md",
+      "url": "https://modal.com/docs/examples/musicgen#setting-up-dependencies",
+      "title": "Create your own music samples with MusicGen",
+      "scraped_at": "2025-08-06T22:54:25Z"
+    },
+    {
+      "path": "docs/examples/musicgen.md",
+      "url": "https://modal.com/docs/examples/musicgen#running-music-generation-on-modal",
+      "title": "Create your own music samples with MusicGen",
+      "scraped_at": "2025-08-06T22:54:25Z"
+    },
+    {
+      "path": "docs/examples/musicgen.md",
+      "url": "https://modal.com/docs/examples/musicgen#hosting-a-web-ui-for-the-music-generator",
+      "title": "Create your own music samples with MusicGen",
+      "scraped_at": "2025-08-06T22:54:26Z"
+    },
+    {
+      "path": "docs/examples/musicgen.md",
+      "url": "https://modal.com/docs/examples/musicgen#addenda",
+      "title": "Create your own music samples with MusicGen",
+      "scraped_at": "2025-08-06T22:54:27Z"
+    },
+    {
+      "path": "docs/examples/musicgen.md",
+      "url": "https://modal.com/docs/examples/musicgen#create-your-own-music-samples-with-musicgen",
+      "title": "Create your own music samples with MusicGen",
+      "scraped_at": "2025-08-06T22:54:29Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#setup",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:30Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#setting-up-dependenices",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:31Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#specifying-the-colqwen2-model",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:32Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#managing-state-with-modal-volumes-and-dicts",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:33Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#managing-chat-sessions-with-modal-dicts",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:34Z"
+    },
+    {
+      "path": "docs/guide/dicts-and-queues.md",
+      "url": "https://modal.com/docs/guide/dicts-and-queues",
+      "title": "Use Modal Dicts and Queues together",
+      "scraped_at": "2025-08-06T22:54:35Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#storing-pdfs-on-a-modal-volume",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:36Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#caching-the-model-weights",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:37Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#defining-a-chat-with-pdf-service",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:38Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#loading-pdfs-as-images",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:39Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#chatting-with-a-pdf-from-the-terminal",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:40Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#a-hosted-gradio-interface",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:41Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#addenda",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:42Z"
+    },
+    {
+      "path": "docs/examples/chat_with_pdf_vision.md",
+      "url": "https://modal.com/docs/examples/chat_with_pdf_vision#chat-with-pdf-rag-with-colqwen2",
+      "title": "Chat with PDF: RAG with ColQwen2",
+      "scraped_at": "2025-08-06T22:54:44Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#basic-setup",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:45Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#configuring-dependencies",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:46Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#storing-model-weights-on-modal",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:46Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#storing-model-outputs-on-modal",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:47Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#implementing-ltx-video-inference-on-modal",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:48Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#generating-videos-from-the-command-line",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:49Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#generating-videos-via-an-api",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:50Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#generating-videos-in-a-web-ui",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:51Z"
+    },
+    {
+      "path": "docs/examples/image_to_video.md",
+      "url": "https://modal.com/docs/examples/image_to_video#animate-images-with-lightricks-ltx-video-via-cli-api-and-web-ui",
+      "title": "Animate images with Lightricks LTX-Video via CLI, API, and web UI",
+      "scraped_at": "2025-08-06T22:54:52Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber#hour-long-episodes-transcribed-in-just-1-minute",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:54:53Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber#try-it-yourself",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:54:54Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber#tech-stack-overview",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:54:54Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber#speed-boosting-whisper-with-parallelism",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:54:55Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber#run-this-app-on-modal",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:54:56Z"
+    },
+    {
+      "path": "docs/examples/whisper-transcriber.md",
+      "url": "https://modal.com/docs/examples/whisper-transcriber#parallel-podcast-transcription-using-whisper",
+      "title": "Parallel podcast transcription using Whisper",
+      "scraped_at": "2025-08-06T22:54:57Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#basic-setup",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:54:58Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#create-a-volume-to-store-esm3-model-weights-and-entrez-sequence-data",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:54:59Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#define-dependencies-in-container-images",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:00Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#define-a-model-inference-class-for-esm3",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:01Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#serve-a-dashboard-as-an-asgi_app",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:02Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#integrating-modal-functions",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:03Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#building-a-ui-in-python-with-gradio",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:04Z"
+    },
+    {
+      "path": "apps.md",
+      "url": "https://modal.com/apps",
+      "title": "Sign in | Modal",
+      "scraped_at": "2025-08-06T22:55:05Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#folding-from-the-command-line",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:06Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#addenda",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:07Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#extracting-sequences-from-uniprot-accession-numbers",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:08Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#supporting-functions-for-the-gradio-app",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:09Z"
+    },
+    {
+      "path": "docs/examples/esm3.md",
+      "url": "https://modal.com/docs/examples/esm3#build-a-protein-folding-dashboard-with-esm3-molstar-and-gradio",
+      "title": "Build a protein folding dashboard with ESM3, Molstar, and Gradio",
+      "scraped_at": "2025-08-06T22:55:10Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts#import-and-define-the-app",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:55:11Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts#defining-the-function-and-importing-the-secret",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:55:12Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts#searching-hacker-news",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:55:13Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts#test-running",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:55:14Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts#defining-the-schedule-and-deploying",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:55:14Z"
+    },
+    {
+      "path": "docs/examples/hackernews_alerts.md",
+      "url": "https://modal.com/docs/examples/hackernews_alerts#run-cron-jobs-in-the-cloud-to-search-hacker-news",
+      "title": "Run cron jobs in the cloud to search Hacker News",
+      "scraped_at": "2025-08-06T22:55:15Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#setup",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:16Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#fold-a-protein-from-the-command-line",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:17Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#installing-chai-1-python-dependencies-on-modal",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:18Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#storing-chai-1-model-weights-on-modal-with-volumes",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:19Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#addenda",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:20Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#storing-chai-1-outputs-on-modal-volumes",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:21Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#running-chai-1-on-modal",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:22Z"
+    },
+    {
+      "path": "docs/examples/chai1.md",
+      "url": "https://modal.com/docs/examples/chai1#fold-proteins-with-chai-1",
+      "title": "Fold proteins with Chai-1",
+      "scraped_at": "2025-08-06T22:55:23Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#defining-dependencies",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:24Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#scraping-the-speech",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:25Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#constructing-the-qa-chain",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:26Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#mapping-onto-modal",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:27Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#test-run-the-cli",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:28Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#test-run-the-web-endpoint",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:29Z"
+    },
+    {
+      "path": "docs/examples/potus_speech_qanda.md",
+      "url": "https://modal.com/docs/examples/potus_speech_qanda#retrieval-augmented-generation-rag-for-question-answering-with-langchain",
+      "title": "Retrieval-augmented generation (RAG) for question-answering with LangChain",
+      "scraped_at": "2025-08-06T22:55:29Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs#define-an-app",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:55:30Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs#cache-the-pre-trained-model-on-a-modal-volume",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:55:31Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs#run-ocr-inference-on-modal-by-wrapping-with-appfunction",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:55:32Z"
+    },
+    {
+      "path": "docs/guide/retries.md",
+      "url": "https://modal.com/docs/guide/retries#function-retries",
+      "title": "Failures and retries",
+      "scraped_at": "2025-08-06T22:55:33Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs#deploy",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:55:34Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs#run-manually",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:55:35Z"
+    },
+    {
+      "path": "docs/examples/doc_ocr_jobs.md",
+      "url": "https://modal.com/docs/examples/doc_ocr_jobs#run-a-job-queue-for-got-ocr",
+      "title": "Run a job queue for GOT-OCR",
+      "scraped_at": "2025-08-06T22:55:36Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount#basic-setup",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:55:36Z"
+    },
+    {
+      "path": "docs/guide/cloud-bucket-mounts.md",
+      "url": "https://modal.com/docs/guide/cloud-bucket-mounts#iam-permissions",
+      "title": "Cloud bucket mounts",
+      "scraped_at": "2025-08-06T22:55:37Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount#download-new-york-citys-taxi-data",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:55:38Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount#analyze-data-with-duckdb",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:55:39Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount#plot-daily-taxi-rides",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:55:40Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount#run-everything",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:55:41Z"
+    },
+    {
+      "path": "docs/examples/s3_bucket_mount.md",
+      "url": "https://modal.com/docs/examples/s3_bucket_mount#analyze-nyc-yellow-taxi-data-with-duckdb-on-parquet-files-from-s3",
+      "title": "Analyze NYC yellow taxi data with DuckDB on Parquet files from S3",
+      "scraped_at": "2025-08-06T22:55:42Z"
+    },
+    {
+      "path": "docs/examples/gpt_oss_inference.md",
+      "url": "https://modal.com/docs/examples/gpt_oss_inference",
+      "title": "Run OpenAI\u2019s gpt-oss model with vLLM",
+      "scraped_at": "2025-08-06T22:55:42Z"
+    },
+    {
+      "path": "index.md",
+      "url": "https://modal.com/",
+      "title": "AI infrastructurethatdevelopers love",
+      "scraped_at": "2025-08-06T22:55:44Z"
+    },
+    {
+      "path": "customers.md",
+      "url": "https://modal.com/customers",
+      "title": "Empowering teams ofevery size",
+      "scraped_at": "2025-08-06T22:55:45Z"
+    },
+    {
+      "path": "blog.md",
+      "url": "https://modal.com/blog",
+      "title": "Blog | Modal",
+      "scraped_at": "2025-08-06T22:55:45Z"
+    },
+    {
+      "path": "use-cases/language-models.md",
+      "url": "https://modal.com/use-cases/language-models",
+      "title": "Language model inference",
+      "scraped_at": "2025-08-06T22:55:48Z"
+    },
+    {
+      "path": "use-cases/image-video-3d.md",
+      "url": "https://modal.com/use-cases/image-video-3d",
+      "title": "Image, video & 3D inference",
+      "scraped_at": "2025-08-06T22:55:49Z"
+    },
+    {
+      "path": "use-cases/audio.md",
+      "url": "https://modal.com/use-cases/audio",
+      "title": "Audio inference",
+      "scraped_at": "2025-08-06T22:55:50Z"
+    },
+    {
+      "path": "use-cases/fine-tuning.md",
+      "url": "https://modal.com/use-cases/fine-tuning",
+      "title": "Fine-tuning",
+      "scraped_at": "2025-08-06T22:55:51Z"
+    },
+    {
+      "path": "use-cases/job-queues.md",
+      "url": "https://modal.com/use-cases/job-queues",
+      "title": "Job queues & batch processing",
+      "scraped_at": "2025-08-06T22:55:51Z"
+    },
+    {
+      "path": "use-cases/sandboxes.md",
+      "url": "https://modal.com/use-cases/sandboxes",
+      "title": "Modal Sandboxes",
+      "scraped_at": "2025-08-06T22:55:52Z"
+    },
+    {
+      "path": "use-cases/comp-bio.md",
+      "url": "https://modal.com/use-cases/comp-bio",
+      "title": "Computational bio",
+      "scraped_at": "2025-08-06T22:55:53Z"
+    },
+    {
+      "path": "articles.md",
+      "url": "https://modal.com/articles",
+      "title": "Articles | Modal",
+      "scraped_at": "2025-08-06T22:55:54Z"
+    },
+    {
+      "path": "gpu-glossary.md",
+      "url": "https://modal.com/gpu-glossary",
+      "title": "GPU Glossary",
+      "scraped_at": "2025-08-06T22:55:55Z"
+    },
+    {
+      "path": "library.md",
+      "url": "https://modal.com/library",
+      "title": "Model Library",
+      "scraped_at": "2025-08-06T22:55:56Z"
+    },
+    {
+      "path": "legal/privacy-policy.md",
+      "url": "https://modal.com/legal/privacy-policy",
+      "title": "Privacy Policy",
+      "scraped_at": "2025-08-06T22:55:56Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#latest",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:55:58Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#111-2025-08-01",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:01Z"
+    },
+    {
+      "path": "docs/guide/sandbox.md",
+      "url": "https://modal.com/docs/guide/sandbox#named-sandboxes",
+      "title": "Sandboxes",
+      "scraped_at": "2025-08-06T22:56:01Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#110-2025-07-17",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:04Z"
+    },
+    {
+      "path": "docs/guide/images.md",
+      "url": "https://modal.com/docs/guide/images#image-builder-updates",
+      "title": "Images",
+      "scraped_at": "2025-08-06T22:56:05Z"
+    },
+    {
+      "path": "settings/image-config.md",
+      "url": "https://modal.com/settings/image-config",
+      "title": "Sign in | Modal",
+      "scraped_at": "2025-08-06T22:56:05Z"
+    },
+    {
+      "path": "docs/reference/modal.Image.md",
+      "url": "https://modal.com/docs/reference/modal.Image#uv_pip_install",
+      "title": "modal.Image",
+      "scraped_at": "2025-08-06T22:56:07Z"
+    },
+    {
+      "path": "docs/reference/modal.Image.md",
+      "url": "https://modal.com/docs/reference/modal.Image#uv_sync",
+      "title": "modal.Image",
+      "scraped_at": "2025-08-06T22:56:08Z"
+    },
+    {
+      "path": "docs/reference/modal.Sandbox.md",
+      "url": "https://modal.com/docs/reference/modal.Sandbox#reload_volumes",
+      "title": "modal.Sandbox",
+      "scraped_at": "2025-08-06T22:56:09Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#105-2025-06-27",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:11Z"
+    },
+    {
+      "path": "docs/reference/modal.Volume.md",
+      "url": "https://modal.com/docs/reference/modal.Volume#read_only",
+      "title": "modal.Volume",
+      "scraped_at": "2025-08-06T22:56:12Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#104-2025-06-13",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:14Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#103-2025-06-05",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:17Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#102-2025-05-26",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:19Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#101-2025-05-19",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:21Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#100-2025-05-16",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:23Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#077",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:25Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0770-2025-05-13",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:28Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#076",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:30Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0763-2025-05-12",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:32Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0760-2025-05-12",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:35Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#075",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:38Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0758-2025-05-12",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:40Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0754-2025-05-09",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:42Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0753-2025-05-08",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:44Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0752-2025-05-08",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:46Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0750-2025-05-08",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:48Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#074",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:50Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07463-2025-05-08",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:52Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07461-2025-05-07",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:55Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07460-2025-05-07",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:57Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07456-2025-05-06",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:56:59Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07453-2025-05-06",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:01Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07451-2025-05-06",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:03Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07449-2025-05-06",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:06Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07448-2025-05-05",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:08Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07446-2025-05-05",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:10Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07439-2025-04-30",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:13Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07436-2025-04-29",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:15Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07435-2025-04-29",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:17Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07432-2025-04-29",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:19Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07425-2025-04-25",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:21Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07423-2025-04-25",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:23Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07422-2025-04-24",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:25Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07421-2025-04-24",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:28Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07418-2025-04-23",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:30Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#07412-2025-04-18",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:32Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0747-2025-04-17",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:35Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0746-2025-04-17",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:37Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#0740-2025-04-15",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:39Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:41Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073173-2025-04-15",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:44Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073170-2025-04-14",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:46Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073165-2025-04-11",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:49Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073160-2025-04-10",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:51Z"
+    },
+    {
+      "path": "docs/guide/modal-1-0-migration.md",
+      "url": "https://modal.com/docs/guide/modal-1-0-migration#replacing-allow_concurrent_inputs-with-modalconcurrent",
+      "title": "Modal 1.0 migration guide",
+      "scraped_at": "2025-08-06T22:57:52Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073159-2025-04-10",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:54Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073158-2025-04-10",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:56Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073148-2025-04-07",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:57:58Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073147-2025-04-07",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:58:01Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073144-2025-04-04",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:58:03Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073139-2025-04-02",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:58:06Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073135-2025-03-29",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:58:08Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073132-2025-03-28",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:58:10Z"
+    },
+    {
+      "path": "docs/reference/changelog.md",
+      "url": "https://modal.com/docs/reference/changelog#073131-2025-03-28",
+      "title": "Changelog",
+      "scraped_at": "2025-08-06T22:58:13Z"
+    }
+  ],
   "metadata": {
     "doc_type": "mintlify",
-    "status": "pending_scrape"
+    "status": "scraped"
   }
 }

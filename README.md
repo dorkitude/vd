@@ -1,104 +1,219 @@
 # VD - Various Docs 📚
 
-A local repository system for storing and browsing developer documentation in Markdown format, making it accessible to local AI agents like Claude Code.
+> **Your personal documentation library for AI-powered development**  
+> Store, browse, and reference developer documentation locally - optimized for AI assistants like Claude Code, Cursor, and GitHub Copilot.
 
-## Overview
+[![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://go.dev/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Built with Bubble Tea](https://img.shields.io/badge/Built%20with-Bubble%20Tea-FF69B4?style=flat)](https://github.com/charmbracelet/bubbletea)
 
-VD (Various Docs) is a documentation aggregator that creates local copies of various online documentation sources. It provides an interactive CLI built with [Bubble Tea](https://github.com/charmbracelet/bubbletea) for browsing and managing these documentation collections.
+## 🚀 Overview
 
-## Features
+VD (Various Docs) is a powerful documentation aggregator that creates local copies of online documentation, making them instantly accessible to AI coding assistants. Built with an elegant terminal UI, it transforms how you interact with technical documentation.
 
-- 📚 **Browse Documentation**: Navigate through documentation with beautiful terminal UI
-- ➕ **Add Sources**: Add new documentation sources (Mintlify sites, GitHub repos)
-- 🕷️ **Smart Scraping**: Automatically scrape and convert documentation to Markdown
-- 🎨 **Beautiful Rendering**: View markdown files with Glamour styling
-- 🤖 **AI-Friendly**: Optimized for local AI assistants to read and reference
+### Why VD?
 
-## Installation
+- **AI-First Design**: Documentation stored in a format optimized for LLMs to understand and reference
+- **Offline Access**: Keep your documentation available even without internet
+- **Beautiful TUI**: Navigate docs with a modern, keyboard-driven interface
+- **Multi-Source Support**: Aggregate docs from Mintlify, GitHub, Modal, and more
+- **Fast Search**: Quickly find what you need across all your documentation
+
+## ✨ Features
+
+- 📚 **Smart Documentation Browser**: Navigate collections with an intuitive terminal UI
+- 🔍 **Intelligent Search**: Find documentation across all sources instantly  
+- 🕷️ **Advanced Scraping**: Support for Mintlify, Modal, GitHub docs, and custom scrapers
+- 🎨 **Beautiful Rendering**: Read markdown with syntax highlighting via Glamour
+- 🤖 **AI-Optimized**: Structured for optimal comprehension by language models
+- 📦 **Modular Architecture**: Easy to extend with new documentation sources
+- ⚡ **Lightning Fast**: Built in Go for maximum performance
+
+## 📦 Installation
+
+### Quick Install
+
+```bash
+# Clone and install in one go
+git clone https://github.com/dorkitude/vd.git && cd vd && make install
+
+# Or using Go directly
+go install github.com/dorkitude/vd/cmd/vd@latest
+```
+
+### Build from Source
 
 ```bash
 # Clone the repository
 git clone https://github.com/dorkitude/vd.git
 cd vd
 
-# Build and install
+# Development build with hot reload
 make dev
 
-# Or build only
+# Production build
 make build
+
+# Install to system
+make install
 ```
 
-## Usage
+## 🎯 Quick Start
 
 ```bash
 # Launch interactive mode
 vd
 
-# Browse documentation collections
+# Browse your documentation library
 vd browse
 
-# Add a new documentation source
+# Add a new documentation source interactively
 vd add
 
-# Scrape pending documentation
+# Scrape documentation from configured sources
 vd scrape
 
-# Get help
+# Show all available commands
 vd help
 ```
 
-## Interactive Navigation
+## 🎮 Interactive Navigation
 
-- **Main Menu**: Choose between browsing, adding, or scraping
-- **Browse Mode**: 
-  - Select a project → View details → Browse files → Read with Glamour
-  - Use `/` to search, `Enter` to select, `Esc` to go back
-- **Add Mode**: Input folder name, title, description, and source URL
-- **Scrape Mode**: Select pending projects and scrape their documentation
+### Keyboard Shortcuts
 
-## Structure
+| Key | Action |
+|-----|--------|
+| `↑/↓` or `j/k` | Navigate items |
+| `Enter` | Select/Open |
+| `Esc` or `q` | Go back/Quit |
+| `/` | Search mode |
+| `?` | Show help |
+| `Tab` | Switch panes |
+
+### Navigation Flow
+
+```mermaid
+graph LR
+    A[Main Menu] --> B[Browse Collections]
+    A --> C[Add Source]
+    A --> D[Scrape Docs]
+    B --> E[Select Project]
+    E --> F[View Files]
+    F --> G[Read with Glamour]
+```
+
+## 📁 Project Structure
 
 ```
 vd/
-├── content/                 # All documentation collections
-│   ├── [project-name]/     # Individual documentation project
-│   │   ├── vd.json        # Metadata for this collection
-│   │   └── ...            # Documentation files
-├── cmd/vd/                 # CLI entry point
-├── internal/               # Core application logic
-│   ├── models/            # Data structures
-│   ├── ui/                # Bubble Tea UI components
-│   └── scraper/           # Scraping logic
-└── scripts/               # Helper scripts (Python scraper)
+├── 📂 content/                 # Documentation library
+│   ├── modal/                 # Modal documentation
+│   ├── modal_python/          # Modal Python SDK docs
+│   └── [project]/            # Your documentation collections
+│       ├── vd.json           # Collection metadata
+│       └── *.md              # Documentation files
+├── 📂 cmd/vd/                 # CLI application
+├── 📂 internal/               
+│   ├── models/               # Data structures
+│   ├── ui/                   # Bubble Tea UI components
+│   │   ├── browse.go        # Documentation browser
+│   │   ├── scrape.go        # Scraper interface
+│   │   └── add.go           # Add new sources
+│   └── scraper/             # Scraping engines
+│       ├── mintlify.go      # Mintlify scraper
+│       ├── modal.go         # Modal docs scraper
+│       └── github.go        # GitHub scraper
+├── 📂 scripts/               # Python scrapers
+│   ├── scrape_modal.py      # Modal documentation scraper
+│   └── scrape_mintlify.py   # Mintlify site scraper
+└── Makefile                  # Build automation
 ```
 
-## Metadata Format (vd.json)
+## 🔧 Configuration
 
-Each documentation collection contains a `vd.json` file with:
-- **title**: Documentation title
-- **description**: What this documentation covers
-- **root_url**: The base URL that was scraped
-- **files**: Array of file metadata with paths, URLs, and timestamps
-- **metadata**: Additional metadata like doc_type and status
+### Collection Metadata (vd.json)
 
-## Supported Documentation Formats
+Each documentation collection includes metadata for organization and AI context:
 
-- **Mintlify Sites**: Modern documentation platforms
-- **GitHub Repositories**: README files and documentation folders
-- More formats can be added by extending the scraper
+```json
+{
+  "title": "Modal Documentation",
+  "description": "Serverless compute platform documentation",
+  "root_url": "https://modal.com/docs",
+  "files": [
+    {
+      "path": "guide/intro.md",
+      "url": "https://modal.com/docs/guide/intro",
+      "last_scraped": "2024-01-15T10:30:00Z"
+    }
+  ],
+  "metadata": {
+    "doc_type": "modal",
+    "status": "active",
+    "version": "1.0.0"
+  }
+}
+```
 
-## Development
+## 🌟 Supported Documentation Sources
 
-Built with:
-- **Go** - Core application
+| Source | Status | Description |
+|--------|--------|-------------|
+| **Mintlify** | ✅ Supported | Modern documentation platforms |
+| **Modal** | ✅ Supported | Serverless compute documentation |
+| **GitHub** | ✅ Supported | README and docs folders |
+| **Docusaurus** | 🚧 Coming Soon | React-based docs |
+| **GitBook** | 🚧 Coming Soon | Popular docs platform |
+| **Custom** | ✅ Supported | Add your own scraper |
+
+## 🛠️ Development
+
+### Tech Stack
+
+- **[Go 1.21+](https://go.dev/)** - Core application
 - **[Bubble Tea](https://github.com/charmbracelet/bubbletea)** - Terminal UI framework
-- **[Glamour](https://github.com/charmbracelet/glamour)** - Beautiful markdown rendering
+- **[Glamour](https://github.com/charmbracelet/glamour)** - Markdown rendering
 - **[Lipgloss](https://github.com/charmbracelet/lipgloss)** - Terminal styling
-- **Python** - Web scraping scripts
+- **[Python 3.8+](https://python.org)** - Web scraping scripts
+- **[BeautifulSoup4](https://pypi.org/project/beautifulsoup4/)** - HTML parsing
 
-## Contributing
+### Adding a New Scraper
 
-Feel free to add support for additional documentation formats or improve the CLI experience!
+1. Create a new scraper in `internal/scraper/`
+2. Implement the `Scraper` interface
+3. Register in `internal/ui/scrape.go`
+4. Add Python script if needed in `scripts/`
+
+Example scraper implementation:
+
+```go
+type CustomScraper struct {
+    baseURL string
+}
+
+func (s *CustomScraper) Scrape(project *models.Project) error {
+    // Your scraping logic here
+    return nil
+}
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how to get started:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Contribution Ideas
+
+- 🕷️ Add support for new documentation platforms
+- 🎨 Enhance the terminal UI with new features
+- 🔍 Improve search functionality
+- 📝 Add export formats (PDF, HTML, etc.)
+- 🌍 Add internationalization support
 
 ## License
 
