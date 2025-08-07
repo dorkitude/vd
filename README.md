@@ -48,15 +48,26 @@ go install github.com/dorkitude/vd/cmd/vd@latest
 git clone https://github.com/dorkitude/vd.git
 cd vd
 
-# Development build with hot reload
+# For development - installs wrapper script that always runs latest code
 make dev
 
-# Production build
+# Build the compiled binary
 make build
 
-# Install to system
+# Install compiled binary to ~/bin
 make install
+
+# Run tests
+make test
 ```
+
+### Development Workflow
+
+The project uses a clever development setup:
+
+- **`make dev`** - Installs a wrapper script at `~/bin/vd` that runs `go run` with your latest code changes. No recompilation needed!
+- **`make build`** - Creates a compiled binary for production use
+- **`make install`** - Installs the compiled binary (use this for production)
 
 ## 🎯 Quick Start
 
