@@ -22,10 +22,10 @@ VD (Various Docs) is a powerful documentation aggregator that creates local copi
 ## ✨ Features
 
 - 📚 **Smart Documentation Browser**: Navigate collections with an intuitive terminal UI
-- 🔍 **Intelligent Search**: Find documentation across all sources instantly  
+- 🔍 **Powerful Search Engine**: Full-text search with context, perfect for AI agents
 - 🕷️ **Advanced Scraping**: Support for Mintlify, Modal, GitHub docs, and custom scrapers
 - 🎨 **Beautiful Rendering**: Read markdown with syntax highlighting via Glamour
-- 🤖 **AI-Optimized**: Structured for optimal comprehension by language models
+- 🤖 **AI-Optimized**: JSON output mode for Claude Code, Cursor, and other AI tools
 - 📦 **Modular Architecture**: Easy to extend with new documentation sources
 - ⚡ **Lightning Fast**: Built in Go for maximum performance
 
@@ -78,6 +78,12 @@ vd
 # Browse your documentation library
 vd browse
 
+# Search across all documentation
+vd search "your query"
+
+# Search specific project
+vd search modal "gpu functions"
+
 # Add a new documentation source interactively
 vd add
 
@@ -87,6 +93,29 @@ vd scrape
 # Show all available commands
 vd help
 ```
+
+### 🔍 Search Features
+
+The search command is designed to be powerful for both humans and AI agents:
+
+```bash
+# Interactive search mode
+vd search
+
+# Search all projects
+vd search "modal functions"
+
+# Search specific project
+vd search modal_python "gpu"
+
+# JSON output for AI agents (like Claude Code)
+VD_FORMAT=json vd search "query"
+
+# Adjust context size (characters around match)
+VD_CONTEXT=200 vd search "query"
+```
+
+**AI Agent Integration**: The JSON output mode makes VD perfect for AI tools like Claude Code, Cursor, and Copilot to search and retrieve documentation programmatically.
 
 ## 🎮 Interactive Navigation
 
